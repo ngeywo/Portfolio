@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#projects_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project_card {
+    height: 240px;
+    width: calc(100% - 20px);
+    margin: 15px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.project_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project_details {
+    margin-top: auto;
+    padding-left: 8px;
+    border-radius: 10px 10px 0 0;
+    height: 40px;
+    overflow: hidden;
+    background-color: #eeeaea;
+}
+
+
+.project_name {
+    font-size: 18px;
+    height: 20px;
+    margin: 10px 16px 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.project_description {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.link_btns {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.link_btns {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.link_btns button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.github_link {
+    padding: 10px 8px;
+    border: 0;
+    border-radius: 5px;
+    background: #d23232;
+    color: white;
+    font-size: 18px;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .project_card {
+        width: calc(50% - 20px);
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .project_card {
+        width: calc((100% / 3) - 20px);
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}

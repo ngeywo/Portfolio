@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>Projects</title>
+{% endblock %}
+{% block content %}
+<div id="projects_container">
+    <div class="project_card" style="background-image: url('{% static 'img/dentist.png' %}')">
+        <div class="project_details">
+            <div class="project_name">
+                <div>Dentist appointment website</div>
+                <div>⏬</div>
+            </div>
+            <div class="project_description"> This a dentist appointment website written primarily in python
+                language. It can be used by a dentist and their patient. The main work is to help patients book
+                appointment to see a dentist.
+            </div>
+            <div class="link_btns">
+                <a href="https://github.com/ngeywo/Dentalweb" target="_blank">
+                    <button class="github_link">Source</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project_card" style="background-image: url('{% static 'img/calculator.png' %}')">
+        <div class="project_details">
+            <div class="project_name">
+                <div>Python Calculator</div>
+                <div>⏬</div>
+            </div>
+            <div class="project_description"> This basic calculator written in python. I can do all basic
+                math
+                operation such as Division, Addition, Multiplication and subtraction on whole mubers as
+                weel as
+                floating point numbers. Input is via clicking calculator buttons.
+            </div>
+            <div class="link_btns">
+                <a href="https://github.com/ngeywo/Calculator" target="_blank">
+                    <button class="github_link">Source</button>
+                </a>
+            </div>
+        </div>
+    </div> 
+
+
+    <div class="project_card" style="background-image: url('{% static 'img/EventsKE.png' %}')">
+        <div class="project_details">
+            <div class="project_name">
+                <div>EventsKE</div>
+                <div>⏬</div>
+            </div>
+            <div class="project_description"> This is a web application written in Django. This allows users to post
+                events. The webapplication is for marketing ofevents.
+            </div>
+            <div class="link_btns">
+                <a href="https://github.com/ngeywo/EventsKe" target="_blank">
+                    <button class="github_link">Source</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project_card" style="background-image: url('{% static 'img/salema.png' %}')">
+        <div class="project_details">
+            <div class="project_name">
+                <div>Sales Manager</div>
+                <div>⏬</div>
+            </div>
+            <div class="project_description"> This is a python project that emulates a simple point of sale system.
+                Technologies learnt through this project include python and SQlite.
+            </div>
+            <div class="link_btns">
+                <a href="https://github.com/ngeywo/PythonSalesmanager" target="_blank">
+                    <button class="github_link">Source</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+        
+{% endblock %}i

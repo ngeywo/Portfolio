@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+        <div id="body">
+            <div id="image_for_lg">
+                <img src="{% static 'img/dev_img.png' %}" alt="Developer Image">
+            </div>
+            <div id="description_and_skills">
+                <div id="salutation"> Hello 👋, I'm Newton! a Software Developer
+                </div>
+                <div id="bio">I am a <strong>Full-Stack software developer 💻 </strong>who loves exploring new
+                    technologies 🤖 and creating
+                    applications 🚀. I specialize in <strong>Android</strong>, <strong>Scripting</strong>, and <strong>Web
+                        Development</strong>
+                </div>
+
+                <div id="skills">
+                    My Skills.
+                </div>
+
+                <div id="skills_icons">
+                    <img src="{% static 'img/web.png' %}" alt="Web development" about="jdbjh">
+                    <img src="{% static 'img/html.png' %}" alt="HTML">
+                    <img src="{% static 'img/css.png' %}" alt="CSS">
+                    <img src="{% static 'img/js.png' %}" alt="JS">
+                    <img src="{% static 'img/python.png' %}" alt="Python">
+                    <img src="{% static 'img/django.png' %}" alt="Django">
+                    <img src="{% static 'img/c++.jpg' %}" alt="C++">
+                    <img src="{% static 'img/c.png' %}" alt="C">
+                </div>
+
+                <div id="skill_description">
+                    &nbsp;
+                </div>
+            </div>
+
+
+        </div>
+
+{% endblock %}
