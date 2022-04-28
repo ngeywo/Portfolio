@@ -1,5 +1,5 @@
 
-certifi @ file:///C:/Users/Admin/Desktop/backup/certifi-2021.10.8-py2.py3-none-any.whl
+# certifi @ file:///C:/Users/Admin/Desktop/backup/certifi-2021.10.8-py2.py3-none-any.whl
 chardet @ file:///C:/Users/Admin/Desktop/backup/chardet-4.0.0-py2.py3-none-any.whl
 charset-normalizer @ file:///C:/Users/Admin/Desktop/backup/charset_normalizer-2.0.12-py3-none-any.whl
 dj-database-url @ file:///C:/Users/Admin/Downloads/New%20folder/dj_database_url-0.5.0-py2.py3-none-any.whl
