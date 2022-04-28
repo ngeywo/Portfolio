@@ -1,6 +1,6 @@
 asgiref 
 dj-database-url
-Djangonone
+Django
 django-heroku
 gunicorn
 psycopg2
