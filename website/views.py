@@ -11,22 +11,24 @@ def projects(requests):
     return render(requests, 'projects.html', {})
 
 
-def contact_us(request):
+def contact(request):
     if request.method  == "POST":
         name = request.POST['name']
         email = request.POST['email']
+        phone = request.POST['phone']
         message = request.POST['message']
         
         
         send_mail(
             name,
             message,
-            email,
-            ['ngainewt@gmail.com']
+            phone,
+            ['ngainewt@gmail.com'],
+            
         )
         messages.success(request, f'Thank you for contacting me!')
 
-        return render(request, 'contact.html',{'name': name})
+        return render(request, 'contact.html', {'name': name})
 
     else:
         return render(request, 'index.html', {})

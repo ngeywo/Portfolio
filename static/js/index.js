@@ -77,10 +77,10 @@ $(document).ready(function () {
     skills = $('#skills_icons img');
     setInterval(animate_skills, 3000);
 
-    $('#contact_us_form').on('submit', function (e) {
-        e.preventDefault()
-        e.returnValue = false
+    // $('#contact_us_form').on('submit', function (e) {
+    //     e.preventDefault()
+    //     e.returnValue = false
 
-        hijackForm($(this))
-    })
+    //     hijackForm($(this))
+    // })
 })

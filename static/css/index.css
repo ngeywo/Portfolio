@@ -60,7 +60,7 @@ body {
 }
 
 #menu_links {
-    background-color: #ffffff63;
+    background-color: #ffffffcc;
     width: 200px;
     display: none;
     flex-direction: column;
@@ -173,7 +173,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 16px 5%;
-    background-color: #123C69;
+    background-color: #011e3d;
     position: relative;
 }
 
