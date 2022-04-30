@@ -1,0 +1,345 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
+#title_bar {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 16px 0 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    background-color: #fffafa;
+    z-index: 999;
+}
+
+#title_icon {
+    height: 65%;
+    background-color: #EDC7B9;
+    margin-right: 8px;
+}
+
+#title_icon img {
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+#name {
+    margin-left: 8px;
+    font-size: 28px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+#menu_icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #c7c1c1;
+    outline: none;
+    margin-left: auto;
+}
+
+#menu_icon svg {
+    padding: 2px;
+}
+
+#menu_links {
+    background-color: #ffffffcc;
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    margin-left: auto;
+    font-size: 18px;
+    padding-right: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#menu_links a {
+    text-decoration: none;
+    color: inherit;
+    margin: 5px 8px 5px 8px;
+    transition: all 200ms ease-in-out;
+    display: inline-block;
+}
+
+#menu_links a:hover {
+    transform: scale(1.1, 1.2);
+    color: #167b7b;
+}
+
+
+/* ============================================= ==================*/
+
+#body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+}
+
+#image_for_lg {
+    width: 90%;
+}
+
+#image_for_lg img {
+    max-width: 100%;
+}
+
+#description_and_skills {
+    width: 90%;
+}
+
+
+#salutation {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 16px;
+}
+
+#salutation span {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+#bio {
+    margin-bottom: 16px;
+}
+
+#skills {
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 8px;
+}
+
+#skills_icons img {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    position: relative;
+}
+
+#skill_description {
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/*=================================== ++++++++ ===================*/
+#contact_us {
+    position: relative;
+    display: flex;
+    background-color: #011e3d;
+    padding-bottom: 35px;
+}
+
+.message {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 33px);
+    z-index: 100;
+    padding: 12px 16px;
+    height: 0;
+    width: 66px !important;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+#contact_us_form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 5%;
+    background-color: #011e3d;
+    position: relative;
+}
+
+#container_name_email {
+    display: flex;
+    flex-direction: column;
+}
+
+#container_textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact_us label {
+    margin-bottom: 5px;
+    color: white;
+}
+#contact_us input{
+    height: 20px;
+}
+
+#contact_us input, #contact_us textarea {
+    margin-bottom: 10px;
+}
+
+#container_textarea textarea {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#submit_btn {
+    width: max-content;
+    margin-left: auto;
+    background-color: #ac3b61;
+    border: 1px solid #d52929;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+#submit_btn:hover {
+    background-color: #cd5959;
+}
+
+/*============================= +++++++ ==============*/
+#socials_super{
+    position: sticky;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: -30px;
+}
+
+#social_icons_container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.social_icon {
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+}
+
+#linked_in {
+    background-color: #0077B5;
+}
+
+#twitter {
+    background-color: #55ADED;
+}
+
+#facebook {
+    background-color: #4867AA;
+}
+
+#github {
+    background-color: #24292E;
+}
+
+#instagram {
+    background-color: #db4345;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    #menu_links {
+        display: none;
+    }
+}
+
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    #name {
+        font-size: 38px;
+    }
+
+    #menu_icon {
+        display: none;
+    }
+
+    #menu_links {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        box-shadow: none;
+    }
+
+    .social_icon {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+    }
+
+    #body {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        height: calc(100% - 100px);
+    }
+
+    #image_for_lg {
+        width: 48%;
+    }
+
+    #description_and_skills {
+        width: 48%;
+    }
+
+    #contact_us_form {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 16px 5%;
+    }
+
+    #container_name_email #form_name {
+        margin-bottom: 25px;
+    }
+
+    #contact_us div {
+        width: 40%;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}

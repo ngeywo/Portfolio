@@ -19,16 +19,19 @@ def contact(request):
         message = request.POST['message']
         
         
-        send_mail(
-            name,
-            message,
-            phone,
-            ['ngainewt@gmail.com'],
+        # send_mail(
+        #     name,
+        #     message,
+        #     phone,
+        #     ['ngainewt@gmail.com'],
             
-        )
-        messages.success(request, f'Thank you for contacting me!')
+        # )
+        messages.success(request, f'Message sent sucessfully!')
 
         return render(request, 'contact.html', {'name': name})
 
     else:
         return render(request, 'index.html', {})
+
+def error_404(request, exception):
+    return render(request, '404.html', status = 404 )
